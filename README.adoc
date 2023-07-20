@@ -1,0 +1,53 @@
+== Emoba Assignment 2 - ThatsApp
+
+=== Bearbeitet von
+
+* Petra Kohler
+
+#### Herausstellungsmerkmal: Visuelle & Akustische Hinweise, bei:
+
+#### New incoming Messages
+-Ich werde als User nicht nur aktustisch informiert, dass eine Nachricht eingetroffen ist,
+ sondern auch visuell auf dem Overview Screen.
+ Ein Counter neben dem Message-Icon zeigt an, wie viele neue Nachrichten im Chat eingetroffen sind.
+ Sobald ich dann diese neuen Nachrichten gelesen habe (Click auf Chatbuddy in der Overview), verschwindet das New Message-Icon.
+ Wenn ich mich bereits im 'richtigen' Chat befinde, wird natürlich nur der new Message Sound abgespielt.
+
+#### Sound-Info auch bei einem neuem User der online ist.
+#### Bei Profil/Messages: Focus manager eingebaut.
+#### Beim Profil: Toast beim Speichern.
+#### Wenn ein neuer Standort verschickt/erhalten wird, kann über das Location-icon die Karte aufgerufen werden.
+#### In den einzelnen Chats zeigt ein timestamp an, wann die Nachricht empfangen wurden (und ist so formatiert, dass auch ein Minion diesen lesen könnte).
+
+* Basic Funktionalität
+[x]   Verschicken von Text-Nachrichten an einen anderen Chat-Teilnehmer (also nur an diese eine Person).
+[x]   Verschicken eines, mit der Kamera des Android-Devices aktuell aufgenommenen, Bildes an den Chat-Teilnehmer.
+[x]   Verschicken der aktuellen GPS-Position an den Chat-Teilnehmer.
+[x]   Empfangen dieser drei Nachrichtentypen.
+[x]   Übersicht über alle Personen, mit denen gechattet werden kann.
+[x]   Profile-Screen mit dem eigenen "Namen" und einem Avatar-Bild.
+
+
+
+=== Getting Started
+
+#### App starten -> Elaubnis erteilen für (Maps/Kamera)
+
+#### Profilnamen ändern --> Drawer, Speichern über Inputfield --> Floppy-Disk Button clicken.
+!(Profil ändern ist wichtig, wenn man die App lokal auf zwei Devices testen möchte. Denn eine Namensänderung triggert einen neuen publish auf /users)
+
+#### Profilbild ändern: -> Im Moment gibts nur 3 fixe Profilbilder die gewählt werden können. Durch klick auf die Mininaturbilder, wird das Profilbild gesetzt.
+Will man das neue Profilbild den Chatbuddies mitteilen, muss man momentan noch auf die Floppydisk clicken.
+
+#### Chatten: -> Overview Screen -> Chat auswählen -> chatten
+
+#### Location sharen: -> Im Chat auf den Add-Location Button clicken -> Kurz warten, Message wird erstellt mit neuer Location (und zudem separat im payload als lat/lon) --> auf den Senden-Button clicken.
+
+#### Location aufrufen: -> im Chat auf das Location-Icon clicken -> Google Maps öffnet sich mit der Location.
+
+#### Photo senden: -> Im Chat auf den Add-Photo Button clicken -> Kamera öffnet sich -> Photo aufnehmen -> Kurz warten, Message wird erstellt (plus als ImageUrl) --> auf den Senden-Button clicken.
+
+#### MQTT/Topics:
+Broker: "broker.hivemq.com"
+Users: fhnw/emoba/thatsapp/pekafr/users
+Messages: fhnw/emoba/thatsapp/pekafr/messages/{userid)

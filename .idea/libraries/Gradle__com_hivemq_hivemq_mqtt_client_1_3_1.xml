@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hivemq:hivemq-mqtt-client:1.3.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hivemq/hivemq-mqtt-client/1.3.1/c1e50b814f2e4376e1595478b9e586e9bda4f662/hivemq-mqtt-client-1.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hivemq/hivemq-mqtt-client/1.3.1/bc2fc363f0b1bfedec8c11221d0add00430ed91f/hivemq-mqtt-client-1.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hivemq/hivemq-mqtt-client/1.3.1/90247e7a6749bd87e0602c6e429b742b3cce75c7/hivemq-mqtt-client-1.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
